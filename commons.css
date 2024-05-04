@@ -1,0 +1,87 @@
+:root {
+    --dark-blue:#010F0F;
+    --light-blue: #aacbc4;
+    --gray: #f1f7f6;
+    --white: #fff;
+    --yellow-accent: #00df81;
+    --font: "Inter", sans-serif;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-blue);
+    font-family: var(--font);
+    margin: 0;
+}
+
+:is(div, p, h1, h2, h3, h4, h5, h6, a, span, li, button, summary) {
+    --fsize-min-default: 16;
+    --fsize-max-default: 16;
+    --mintrans-default: 1000;
+    --maxtrans-default: 1600;
+
+    --_fsize-min: var(--fsize-min, var(--fsize-min-default));
+    --_fsize-max: var(--fsize-max, var(--fsize-max-default));
+
+    --_mintrans: var(--mintrans, var(--mintrans-default));
+    --_maxtrans: var(--maxtrans, var(--maxtrans-default));
+    font-size: clamp(var(--_fsize-min) * 1px, calc((var(--_fsize-max) - var(--_fsize-min)) * ((100vw - var(--_mintrans)* 1px) / (var(--_maxtrans) - var(--_mintrans))) + var(--_fsize-min) * 1px), var(--_fsize-max) * 1px);
+
+    --_color: var(--color, var(--color-default));
+    --color-default: var(--light-blue);
+    color: var(--_color);
+
+    --_ffamily: var(--ffamily, var(--ffamily-default));
+    --ffamily-default: var(--font);
+    font-family: var(--_ffamily);
+
+    --_fweight: var(--fweight, var(--fweight-default));
+    --fweight-default: 400;
+    font-weight: var(--_fweight);
+}
+
+:is(a) {
+    --color: var(--primary);
+    text-decoration: none;
+}
+
+:is(a:hover) {
+    --_color-hover: var(--color-hover, var(--color-default-hover));
+    --color-default-hover: var(--neutral-900);
+    color: var(--_color-hover) !important;
+
+    --_bgc-hover: var(--bgc-hover, var(--bgc-hover-default));
+    --bgc-hover-default: var(--secondary-100);
+    background-color: var(--_bgc-hover) !important;
+}
+
+.svg {
+    --size: 20px;
+    height: var(--size);
+    width: var(--size); 
+    transition: all 0.15s ease;
+}
+
+@media (max-width: 1000px) {
+    .svg {
+        --size: 14px;
+    }
+}
+
+h2 {
+    --color: var(--gray);
+}
+
+p, span {
+    --color: var(--light-blue);
+    line-height: 1.40;
+    --fsize-min: 14;
+}
+
+p span.bold {
+    --color: var(--gray);
+    --fweight: 500;
+}
