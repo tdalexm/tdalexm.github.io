@@ -1,10 +1,27 @@
+@font-face {
+    font-family: "Iosevka Aile";
+    src: url("./resources/fonts/IosevkaAile-Regular-subset.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Iosevka Etoile";
+    src: url("./resources/fonts/IosevkaEtoile-Regular-subset.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
-    --dark-blue:#010F0F;
-    --light-blue: #aacbc4;
-    --gray: #f1f7f6;
+    --bg-primary: #181820;
+    --fg-primary: #DCD7BA;
+    --fg-muted: #C8C093;
     --white: #fff;
-    --yellow-accent: #00df81;
-    --font: "Inter", sans-serif;
+    --accent-green: #98BB6C;
+    --font: "Iosevka Aile", "Inter", sans-serif;
+    --font-display: "Iosevka Etoile", "Inter", sans-serif;
 }
 
 html { 
@@ -12,7 +29,7 @@ html {
 }
 
 body {
-    background-color: var(--dark-blue);
+    background-color: var(--bg-primary);
     font-family: var(--font);
     margin: 0;
 }
@@ -31,7 +48,7 @@ body {
     font-size: clamp(var(--_fsize-min) * 1px, calc((var(--_fsize-max) - var(--_fsize-min)) * ((100vw - var(--_mintrans)* 1px) / (var(--_maxtrans) - var(--_mintrans))) + var(--_fsize-min) * 1px), var(--_fsize-max) * 1px);
 
     --_color: var(--color, var(--color-default));
-    --color-default: var(--light-blue);
+    --color-default: var(--fg-primary);
     color: var(--_color);
 
     --_ffamily: var(--ffamily, var(--ffamily-default));
@@ -48,14 +65,19 @@ body {
     text-decoration: none;
 }
 
-:is(a:hover) {
-    --_color-hover: var(--color-hover, var(--color-default-hover));
-    --color-default-hover: var(--neutral-900);
-    color: var(--_color-hover) !important;
+a.about-link {
+    --color: #E5BF78;
+    text-decoration: none;
+}
 
-    --_bgc-hover: var(--bgc-hover, var(--bgc-hover-default));
-    --bgc-hover-default: var(--secondary-100);
-    background-color: var(--_bgc-hover) !important;
+a.about-link:hover {
+    --color: #98BB6C;
+}
+
+:is(a:hover) {
+    --color: var(--color-hover, var(--color-default-hover));
+    --color-default-hover: var(--neutral-900);
+    color: var(--_color);
 }
 
 .svg {
@@ -71,17 +93,38 @@ body {
     }
 }
 
+::selection {
+    background-color: #65859459;
+    color: var(--fg-primary);
+}
+
+::-moz-selection {
+    background-color: #65859459;
+    color: var(--fg-primary);
+}
+
 h2 {
-    --color: var(--gray);
+    --color: #FF5D62;
+    font-family: var(--font-display);
+}
+
+h1 {
+    color: #FF5D62;
+    font-family: var(--font-display);
+}
+
+.card-title {
+    color: #98BB6C;
+    font-family: var(--font-display);
 }
 
 p, span {
-    --color: var(--light-blue);
+    --color: var(--fg-primary);
     line-height: 1.40;
     --fsize-min: 14;
 }
 
 p span.bold {
-    --color: var(--gray);
+    --color: var(--fg-muted);
     --fweight: 500;
 }

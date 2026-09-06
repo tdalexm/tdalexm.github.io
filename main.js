@@ -42,6 +42,17 @@
 
         launchAnimate.init();
 
+        // Cursor glow effect (Brittany Chiang technique)
+        const glow = $('.cursor-glow');
+        if (glow.length && window.matchMedia('(hover: hover)').matches) {
+            $(document).on('mousemove', function (e) {
+                glow[0].style.background =
+                    'radial-gradient(500px circle at ' +
+                    e.clientX + 'px ' + e.clientY +
+                    'px, rgba(210, 126, 153, 0.02), transparent 80%)';
+            });
+        }
+
     });
 
 })(jQuery);

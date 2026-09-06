@@ -1,296 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="commons.css" />
-    <link rel="stylesheet" href="card.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="commons.css" />
+	<link rel="stylesheet" href="card.css" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="/main.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="info__wrapper">
-                    <h1 class="header__title">Alex Martinez-Losa</h1>
-                    <h2 class="header__subtitle">Mid-Senior Fullstack Developer</h2>
-                    <p>
-                        Desarrolador Fullstack hasta que me toca hacer una subconsulta, ahí ya soy Frontend. CSS Enjoyer. Conozco muchas formas de centrar un div.
-                    </p>
-                </div>
-                <nav class="nav-tabs">
-                    <a href="#about-me" class="nav-tab about-me">
-                        <div class="svg-nav__wrapper">
-                            <svg class="bottom" aria-hidden="true" width="11" height="11">
-                                <circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
-                            </svg>
-                            <svg class="top" aria-hidden="true" width="11" height="11">
-                                <circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
-                            </svg>
-                        </div>
-                        Sobre mi
-                    </a>
-                    <a href="#experience" class="nav-tab experience">
-                        <div class="svg-nav__wrapper">
-                            <svg class="bottom" aria-hidden="true" width="11" height="11">
-                                <circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
-                            </svg>
-                            <svg class="top" aria-hidden="true" width="11" height="11">
-                                <circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
-                            </svg>
-                        </div>
-                        Experiencia
-                    </a>
-                    <a href="#projects" class="nav-tab projects">
-                        <div class="svg-nav__wrapper">
-                            <svg class="bottom" aria-hidden="true" width="11" height="11">
-                                <circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
-                            </svg>
-                            <svg class="top" aria-hidden="true" width="11" height="11">
-                                <circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
-                            </svg>
-                        </div>
-                        Proyectos
-                    </a>
-                </nav>
-            </div>
-        </header>
-        <main class="content">
-            <section id="about-me" class="intro">
-                <p>
-                    Mi aventura comenzó cuando nos asignaron un ejercicio de CSS en cuarto grado de la ESO. Siempre me había apasionado la tecnología (sí, jugaba videojuegos) y llevaba un tiempo reflexionando sobre si quería dedicarme a algo relacionado. Ese ejercicio en clase, donde nos explicaron cómo se diseñaban las páginas web, fue lo que finalmente me impulsó a decidirme.
-                    <br /><br />
-                    Después de un pequeño (quizás no tan pequeño) salto en el tiempo, me adentré en el mundo de los videojuegos y completé todos los grados disponibles en informática. Hoy en día, trabajo profesionalmente en la creación de páginas web en una pequeña empresa de desarrollo digital. Mi labor se centra en diseñar páginas web con Wordpress y Drupal, asegurándome de que sean completamente accesibles y estén "pixel perfect", al mismo tiempo que garantizo un código sólido y bien estructurado.
-                    <br /><br />
-                    Aparte de mi trabajo, dedico parte de mi tiempo libre a seguir formándome, priorizando el aprendizaje de React y manteniéndome al día con los últimos cambios en CSS. Cuando no estoy frente al ordenador, suelo sumergirme en novelas de literatura fantástica y ciencia ficción, practicar deporte, jugar a la Switch o ver vídeos de cocina.
-                </p>
-            </section>
-            <section id="experience" class="experience">
-                <div class="card experience-card">
-                    <div class="experience-card__header">
-                        <div class="card-title experience-card__job-title">Mid Senior</div>
-                        <div class="experience-card__job-time">2024 - Presente</div>
-                    </div> 
-                    <div class="card-content experience-card__content">
-                        <a href="https://brandcode.es/" target="_blank"  class="card-title experience-card__job-workplace">
-                            <div class="card-title experience-card__job-title">Mid Senior</div>
-                            Brandcode
-                            <div class="svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                    <path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
-                                </svg>                              
-                            </div>
-                        </a>
-                        <div class="experience-card__job-time">2024 - Presente</div>
-                        <p class="card-desciption experience-card__description">Creación y mantenimiento de páginas web, donde no solo lidero desarrollo, sino que también gestiono y comparto conocimientos con un pequeño equipo de trabajo. Además, tengo el rol de liderar las reuniones con el cliente del proyecto principal en el que estoy asignado.  </p> 
-                        <div class="card-links experience-card__links">
-                            <a href="https://www.spigogroup.com/" target="_blank" class="link experience__link">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                        <path fill-rule="evenodd" d="M8.914 6.025a.75.75 0 0 1 1.06 0 3.5 3.5 0 0 1 0 4.95l-2 2a3.5 3.5 0 0 1-5.396-4.402.75.75 0 0 1 1.251.827 2 2 0 0 0 3.085 2.514l2-2a2 2 0 0 0 0-2.828.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M7.086 9.975a.75.75 0 0 1-1.06 0 3.5 3.5 0 0 1 0-4.95l2-2a3.5 3.5 0 0 1 5.396 4.402.75.75 0 0 1-1.251-.827 2 2 0 0 0-3.085-2.514l-2 2a2 2 0 0 0 0 2.828.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
-                                    </svg>                              
-                                </div>
-                                spigogroup.com
-                            </a>
-                        </div>
-                        <div class="card-techs experience-card__techs">
-                            <div class="tech experience__tech">
-                                JavaScript
-                            </div>
-                            <div class="tech experience__tech">
-                                jQuery
-                            </div>
-                            <div class="tech experience__tech">
-                                PHP
-                            </div>
-                            <div class="tech experience__tech">
-                                SCSS
-                            </div>
-                            <div class="tech experience__tech">
-                                Less
-                            </div>
-                            <div class="tech experience__tech">
-                                Wordpress
-                            </div>
-                            <div class="tech experience__tech">
-                                Drupal
-                            </div>
-                            <div class="tech experience__tech">
-                                Locomotive.js
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="card experience-card">
-                    <div class="experience-card__header">
-                        <div class="card-title experience-card__job-title">Programador Junior</div>
-                        <div class="experience-card__job-time">2022 - 2024</div>
-                    </div> 
-                    <div class="card-content experience-card__content">
-                        <a href="https://dewenir.es/" target="_blank" class="card-title experience-card__job-workplace">
-                            <div class="card-title experience-card__job-title">Programador Junior</div>
-                            Dewenir
-                            <div class="svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                    <path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
-                                </svg>                              
-                            </div>                         
-                        </a>
-                        <div class="experience-card__job-time">2022 - 2024</div>
-                        <p class="card-desciption experience-card__description">Me dedicaba a la creación y mantenimiento de diversos proyectos en Wordpress y Drupal, principalmente. Se trabajaba con una amplia gama de clientes que incluyen desde bodegas y empresas locales hasta el Museo Picasso de Barcelona</p> 
-                        <div class="card-links experience-card__links">
-                            <a href="https://www.aroawines.com/" target="_blank" class="link experience__link">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                        <path fill-rule="evenodd" d="M8.914 6.025a.75.75 0 0 1 1.06 0 3.5 3.5 0 0 1 0 4.95l-2 2a3.5 3.5 0 0 1-5.396-4.402.75.75 0 0 1 1.251.827 2 2 0 0 0 3.085 2.514l2-2a2 2 0 0 0 0-2.828.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M7.086 9.975a.75.75 0 0 1-1.06 0 3.5 3.5 0 0 1 0-4.95l2-2a3.5 3.5 0 0 1 5.396 4.402.75.75 0 0 1-1.251-.827 2 2 0 0 0-3.085-2.514l-2 2a2 2 0 0 0 0 2.828.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
-                                    </svg>                              
-                                </div>
-                                aroawines.com
-                            </a>
-                            <a href="https://museupicassobcn.cat/" target="_blank" class="link experience__link">
-                                <div class="svg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                        <path fill-rule="evenodd" d="M8.914 6.025a.75.75 0 0 1 1.06 0 3.5 3.5 0 0 1 0 4.95l-2 2a3.5 3.5 0 0 1-5.396-4.402.75.75 0 0 1 1.251.827 2 2 0 0 0 3.085 2.514l2-2a2 2 0 0 0 0-2.828.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                                        <path fill-rule="evenodd" d="M7.086 9.975a.75.75 0 0 1-1.06 0 3.5 3.5 0 0 1 0-4.95l2-2a3.5 3.5 0 0 1 5.396 4.402.75.75 0 0 1-1.251-.827 2 2 0 0 0-3.085-2.514l-2 2a2 2 0 0 0 0 2.828.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
-                                    </svg>                              
-                                </div>
-                                museupicassobcn.cat
-                            </a>
-                        </div>
-                        <div class="card-techs experience-card__techs">
-                            <div class="tech experience__tech">
-                                JavaScript
-                            </div>
-                            <div class="tech experience__tech">
-                                jQuery
-                            </div>
-                            <div class="tech experience__tech">
-                                PHP
-                            </div>
-                            <div class="tech experience__tech">
-                                SCSS
-                            </div>
-                            <div class="tech experience__tech">
-                                Less
-                            </div>
-                            <div class="tech experience__tech">
-                                Wordpress
-                            </div>
-                            <div class="tech experience__tech">
-                                Drupal
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <a class="resume" href="/"> Curriculum completo
-                    <div class="svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                            <path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
-                </a>
-            </section>
-            <section id="projects" class="projects">
-                <div class="card project-card">
-                    <div class="projects-card__img">
-                        <img src="./resources/Museo_picasso.png" alt="Imagen de la pagina del Museo Picasso de Barcelona">
-                    </div>
-                    <div class="card-content project-card__content">
-                        <a href="https://museupicassobcn.cat/" target="_blank" class="card-title project-card__title"> Museo Picasso de Barcelona
-                            <div class="svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                    <path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
-                                </svg>                              
-                            </div>
-                        </a>
-                        <p class="card-desciption project-card__description">Proyecto a medida para el Museo Picasso de Barcelona, en colaboracion con Gnoss. Implementado en drupal se realizó un rediseño de la parte frontal e integrando los diferentes portales mediante la obtencion de datos por APIs.</p> 
-                        <div class="card-techs project-card__techs">
-                            <div class="tech project__tech">
-                                Drupal
-                            </div>
-                            <div class="tech project__tech">
-                                Twig
-                            </div>
-                            <div class="tech project__tech">
-                                PHP
-                            </div>
-                            <div class="tech project__tech">
-                                jQuery
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="card project-card">
-                    <div class="projects-card__img">
-                        <img src="./resources/aroa.png" alt="Imagen de la pagina de Aroa Wines">
-                    </div>
-                    <div class="card-content project-card__content">
-                        <a href="https://aroawines.com/" target="_blank" class="card-title project-card__title"> Aroa Wines
-                            <div class="svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                    <path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
-                                </svg>                              
-                            </div>
-                        </a>
-                        <p class="card-desciption project-card__description">Proyecto en wordpress para crear una web unica en la que se muestran los productos y la marca de Aroa Bodegas.</p> 
-                        <div class="card-techs project-card__techs">
-                            <div class="tech project__tech">
-                                Wordpress
-                            </div>
-                            <div class="tech project__tech">
-                                PHP
-                            </div>
-                            <div class="tech project__tech">
-                                jQuery
-                            </div>
-                            <div class="tech project__tech">
-                                Locomotive.js
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="card project-card">
-                    <div class="projects-card__img">
-                        <img src="./resources/spigo.png" alt="Imagen de la pagina de spigogroup">
-                    </div>
-                    <div class="card-content project-card__content">
-                        <a href="https://www.spigogroup.com/" target="_blank" class="card-title project-card__title"> Spigo Group
-                            <div class="svg">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                    <path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
-                                </svg>                              
-                            </div>
-                        </a>
-                        <p class="card-desciption project-card__description">Página web de SPIGO GROUP en la que mostrar el producto y la marca, creando una experiencia elegante y atractiva para el cliente.</p> 
-                        <div class="card-techs project-card__techs">
-                            <div class="tech project__tech">
-                                Wordpress
-                            </div>
-                            <div class="tech project__tech">
-                                PHP
-                            </div>
-                            <div class="tech project__tech">
-                                jQuery
-                            </div>
-                            <div class="tech project__tech">
-                                Locomotive.js
-                            </div>
-                            <div class="tech project__tech">
-                                Less
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </section>
-        </main>
-    </div>
+	<div class="cursor-glow" aria-hidden="true"></div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="info__wrapper">
+					<h1 class="header__title">Alex Martínez-Losa</h1>
+					<h2 class="header__subtitle">Senior Drupal Developer</h2>
+					<p>
+						Desarrollador Senior con 5 años de experiencia en el no tan pequeño nicho del desarrollo con Drupal.
+					</p>
+				</div>
+				<nav class="nav-tabs">
+					<a href="#about-me" class="nav-tab about-me">
+						<div class="svg-nav__wrapper">
+							<svg class="bottom" aria-hidden="true" width="11" height="11">
+								<circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
+							</svg>
+							<svg class="top" aria-hidden="true" width="11" height="11">
+								<circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
+							</svg>
+						</div>
+						Sobre mi
+					</a>
+					<a href="#experience" class="nav-tab experience">
+						<div class="svg-nav__wrapper">
+							<svg class="bottom" aria-hidden="true" width="11" height="11">
+								<circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
+							</svg>
+							<svg class="top" aria-hidden="true" width="11" height="11">
+								<circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
+							</svg>
+						</div>
+						Experiencia
+					</a>
+					<a href="#projects" class="nav-tab projects">
+						<div class="svg-nav__wrapper">
+							<svg class="bottom" aria-hidden="true" width="11" height="11">
+								<circle class="path" fill="none" stroke-width="1" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
+							</svg>
+							<svg class="top" aria-hidden="true" width="11" height="11">
+								<circle class="path" fill="none" stroke-width="2" stroke-linecap="round" cx="6" cy="6" r="4"></circle>
+							</svg>
+						</div>
+						Proyectos
+					</a>
+				</nav>
+				<ul class="social-links" aria-label="Redes sociales">
+					<li class="social-links__item">
+						<a href="https://github.com/tdalexm" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="social-links__icon" aria-hidden="true">
+								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+							</svg>
+						</a>
+					</li>
+					<li class="social-links__item">
+						<a href="https://es.linkedin.com/in/alex-mart%C3%ADnez-losa" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="social-links__icon" aria-hidden="true">
+								<path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="content">
+			<section id="about-me" class="intro">
+				<p>
+					¡Hola! Soy Alex y creo que me gusta esto de la informática. Soy Senior Developer con 5 años de experiencia en los que he hecho páginas web con Astro, Angular, Drupal, PHP, React y WordPress.
+					<br /><br />
+					Mi trayectoria abarca desde una startup hasta una gran empresa. En <a href="https://www.indragroup.com/es/home" target="_blank" class="about-link">Indra</a>, trabajé en el desarrollo backend del proyecto GNSS Galileo de la Comisión Europea. Actualmente he vuelto a <a href="https://brandcode.es/" target="_blank" class="about-link">Brandcode</a> donde lidero el equipo de desarrollo como Desarrollador Senior. Más allá del código, centro mis esfuerzos en ayudar con el flujo cliente-desarrollador analizando requisitos y proponiendo soluciones escalables que facilitan posibles iteraciones y mejoras futuras, evitando el "development hell".
+					<br /><br />
+					Ahora mismo fuera del trabajo dedico parte de mi tiempo a estudiar Golang y Angular. Fuera de la programación intento volver a retomar mi pasión por los videojuegos, dibujar pixelart, leer ciencia ficción y hacer deporte.
+				</p>
+			</section>
+			<section id="experience" class="experience">
+				<div class="card experience-card">
+					<div class="experience-card__header">
+						<div class="card-title experience-card__job-title">Senior Dev</div>
+						<div class="experience-card__job-time">agosto 2026 - Presente</div>
+					</div>
+					<div class="card-content experience-card__content">
+						<a href="https://brandcode.es/" target="_blank"  class="card-title experience-card__job-workplace">
+							<div class="card-title experience-card__job-title">Senior Dev</div>
+							Brandcode
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<div class="experience-card__job-time">agosto 2026 - Presente</div>
+						<p class="card-desciption experience-card__description">Creación y mantenimiento de páginas web drupal, donde no solo lidero desarrollo, sino que también gestiono y asesoro al equipo de trabajo y al cliente.</p>
+						<div class="card-techs experience-card__techs">
+							<div class="tech experience__tech">
+								Drupal
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card experience-card">
+					<div class="experience-card__header">
+						<div class="card-title experience-card__job-title">Mid Senior Dev</div>
+						<div class="experience-card__job-time">enero 2025 - julio 2026</div>
+					</div>
+					<div class="card-content experience-card__content">
+						<a href="https://www.indragroup.com/es/home" target="_blank" class="card-title experience-card__job-workplace">
+							<div class="card-title experience-card__job-title">Mid Senior Dev</div>
+							Indra
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<div class="experience-card__job-time">enero 2025 - julio 2026</div>
+						<p class="card-desciption experience-card__description">Desarrollo backend para la web del sistema europeo de posicionamiento por satélite GNSS Galileo. Implementando el gestor de contenido y conectividad con los diferentes equipos del proyecto.</p>
+						<div class="card-links experience-card__links">
+						</div>
+						<div class="card-techs experience-card__techs">
+							<div class="tech experience__tech">
+								Drupal
+							</div>
+							<div class="tech experience__tech">
+								React
+							</div>
+							<div class="tech experience__tech">
+								PHP
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card experience-card">
+					<div class="experience-card__header">
+						<div class="card-title experience-card__job-title">Junior Dev</div>
+						<div class="experience-card__job-time">2022 - 2024</div>
+					</div>
+					<div class="card-content experience-card__content">
+						<a href="https://brandcode.es/" target="_blank" class="card-title experience-card__job-workplace">
+							Dewenir - Brandcode
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<div class="experience-card__job-time">mayo 2022 - enero 2024</div>
+						<p class="card-desciption experience-card__description">Creación y mantenimiento de diversos proyectos en WordPress y Drupal, principalmente. Trabajaba en una amplia gama de proyectos desde paginas de marca, empresas locales hasta proyectos de administraciones publicas, regionales y nacionales.</p>
+						<div class="card-links experience-card__links">
+							<a href="https://www.spigogroup.com/" target="_blank" class="link experience__link">
+								<div class="svg">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+										<path fill-rule="evenodd" d="M8.914 6.025a.75.75 0 0 1 1.06 0 3.5 3.5 0 0 1 0 4.95l-2 2a3.5 3.5 0 0 1-5.396-4.402.75.75 0 0 1 1.251.827 2 2 0 0 0 3.085 2.514l2-2a2 2 0 0 0 0-2.828.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+										<path fill-rule="evenodd" d="M7.086 9.975a.75.75 0 0 1-1.06 0 3.5 3.5 0 0 1 0-4.95l2-2a3.5 3.5 0 0 1 5.396 4.402.75.75 0 0 1-1.251-.827 2 2 0 0 0-3.085-2.514l-2 2a2 2 0 0 0 0 2.828.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+									</svg>
+								</div>
+								spigogroup.com
+							</a>
+							<a href="https://www.aroawines.com/" target="_blank" class="link experience__link">
+								<div class="svg">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+										<path fill-rule="evenodd" d="M8.914 6.025a.75.75 0 0 1 1.06 0 3.5 3.5 0 0 1 0 4.95l-2 2a3.5 3.5 0 0 1-5.396-4.402.75.75 0 0 1 1.251.827 2 2 0 0 0 3.085 2.514l2-2a2 2 0 0 0 0-2.828.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+										<path fill-rule="evenodd" d="M7.086 9.975a.75.75 0 0 1-1.06 0 3.5 3.5 0 0 1 0-4.95l2-2a3.5 3.5 0 0 1 5.396 4.402.75.75 0 0 1-1.251-.827 2 2 0 0 0-3.085-2.514l-2 2a2 2 0 0 0 0 2.828.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+									</svg>
+								</div>
+								aroawines.com
+							</a>
+						</div>
+						<div class="card-techs experience-card__techs">
+							<div class="tech experience__tech">
+								Astro
+							</div>
+							<div class="tech experience__tech">
+								Angular
+							</div>
+							<div class="tech experience__tech">
+								Drupal
+							</div>
+							<div class="tech experience__tech">
+								PHP
+							</div>
+							<div class="tech experience__tech">
+								Wordpress
+							</div>
+							<div class="tech experience__tech">
+								Locomotive.js
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="resume" href="/"> Curriculum completo
+					<div class="svg">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+							<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+						</svg>
+					</div>
+				</a>
+			</section>
+			<section id="projects" class="projects">
+				<div class="card project-card">
+					<div class="card-content project-card__content">
+						<a href="https://github.com/tdalexm/goson-server" target="_blank" class="card-title project-card__title"> GO-Son Server
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<p class="card-desciption project-card__description">Servidor JSON RESTful escrito en Go, inspirado en json-server. Ofrece endpoints CRUD plug-and-play sobre cualquier archivo JSON, con filtrado avanzado, paginación segura y respuestas estilo JSON:API</p>
+						<div class="card-techs project-card__techs">
+							<div class="tech project__tech">
+								Go
+							</div>
+							<div class="tech project__tech">
+								Gin
+							</div>
+							<div class="tech project__tech">
+								REST API
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card project-card">
+					<div class="projects-card__img">
+						<img src="./resources/gsc-europa-logo.png" alt="Logo de EUSPA - European Union Agency for the Space Programme">
+					</div>
+					<div class="card-content project-card__content">
+						<a href="https://www.gsc-europa.eu/" target="_blank" class="card-title project-card__title">GSC Europa (Galileo) (WIP)
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<p class="card-desciption project-card__description">Sitio web del sistema europeo de posicionamiento por satélite GNSS Galileo. El sitio no está publicado todavía.</p>
+						<div class="card-techs project-card__techs">
+							<div class="tech project__tech">
+								Drupal
+							</div>
+							<div class="tech project__tech">
+								PHP
+							</div>
+							<div class="tech project__tech">
+								JavaScript
+							</div>
+							<div class="tech project__tech">
+								React
+							</div>
+							<div class="tech project__tech">
+								API
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card project-card">
+					<div class="projects-card__img">
+						<img src="./resources/spigo.png" alt="Página de inicio de Spigo Group">
+					</div>
+					<div class="card-content project-card__content">
+						<a href="https://www.spigogroup.com/" target="_blank" class="card-title project-card__title"> Spigo Group
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<p class="card-desciption project-card__description">Página web de SPIGO GROUP en la que mostrar el producto y la marca, creando una experiencia elegante y atractiva para el cliente.</p>
+						<div class="card-techs project-card__techs">
+							<div class="tech project__tech">
+								Wordpress
+							</div>
+							<div class="tech project__tech">
+								PHP
+							</div>
+							<div class="tech project__tech">
+								jQuery
+							</div>
+							<div class="tech project__tech">
+								Locomotive.js
+							</div>
+							<div class="tech project__tech">
+								Less
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card project-card">
+					<div class="projects-card__img">
+						<img src="./resources/aroa.png" alt="Página de inicio de Aroa Wines">
+					</div>
+					<div class="card-content project-card__content">
+						<a href="https://aroawines.com/" target="_blank" class="card-title project-card__title"> Aroa Wines
+							<div class="svg">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+									<path fill-rule="evenodd" d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z" clip-rule="evenodd" />
+								</svg>
+							</div>
+						</a>
+						<p class="card-desciption project-card__description">Proyecto en WordPress para crear una web única en la que se muestran los productos y la marca de Aroa Bodegas.</p>
+						<div class="card-techs project-card__techs">
+							<div class="tech project__tech">
+								Wordpress
+							</div>
+							<div class="tech project__tech">
+								PHP
+							</div>
+							<div class="tech project__tech">
+								jQuery
+							</div>
+							<div class="tech project__tech">
+								Locomotive.js
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
 </body>
 </html>

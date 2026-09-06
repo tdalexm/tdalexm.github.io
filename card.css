@@ -30,8 +30,8 @@
 }
 
 .content .card .card-title {
-    --color: var(--gray);
-    --color-hover: var(--yellow-accent);
+    --color: var(--fg-muted);
+    --color-hover: var(--accent-green);
     --fsize-max: 20;
     --fsize-min: 16;
     line-height: 1.25;
@@ -42,7 +42,7 @@
 }
 
 .content .card .card-title:hover svg {
-    color: var(--yellow-accent);
+    color: var(--accent-green);
     translate: 2px -2px;
 }
 
@@ -56,13 +56,13 @@
     gap: 4px;
     --fsize-max: 14;
     --fsize-min: 12;
-    --color: var(--gray);
-    --color-hover: var(--light-blue);
+    --color: var(--fg-muted);
+    --color-hover: var(--fg-primary);
     width: fit-content;
 }
 
 .content .card .card-links .link:hover svg {
-    color: var(--light-blue);
+    color: var(--fg-primary);
 }
 
 .content  .card .card-links .link svg {
@@ -82,8 +82,8 @@
 }
 
 .content .card .card-techs .tech {
-    background-color: #00df8160;
-    --color: var(--yellow-accent);
+    background-color: #65859459;
+    --color: #7FB4CA;
     padding-block: 8px;
     padding-inline: 12px;
     width: fit-content;
